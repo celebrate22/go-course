@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "address": {
+      "city": "Lagos",
+      "country": "Nigeria"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Emeka Okafor",
+    "email": "emeka.okafor@example.com",
+    "address": {
+      "city": "Ibadan",
+      "country": "Nigeria"
+    }
+  }
+]

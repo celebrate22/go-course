@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "address": { "city": "Lagos", "country": "Nigeria" }
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "",
+    "address": { "city": "Abuja", "country": "Nigeria" }
+  },
+  {
+    "id": 3,
+    "name": "Carla Diaz",
+    "email": "carla.diaz@example.com",
+    "address": { "city": "Madrid", "country": "Spain" }
+  },
+  {
+    "id": 4,
+    "name": "Emeka Okafor",
+    "email": "emeka.okafor@example.com",
+    "address": { "city": "Ibadan", "country": "Nigeria" }
+  }
+]
