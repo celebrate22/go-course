@@ -1,17 +1,1 @@
-[
-  {
-    "id": 1,
-    "name": "Alice Johnson",
-    "email": "alice@example.com"
-  },
-  {
-    "id": 3,
-    "name": "Carla Diaz",
-    "email": "carla.diaz@example.com"
-  },
-  {
-    "id": 5,
-    "name": "Emeka Okafor",
-    "email": "emeka.okafor@example.com"
-  }
-]
+null

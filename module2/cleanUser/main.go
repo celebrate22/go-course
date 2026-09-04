@@ -4,11 +4,11 @@
 // 2. Filters to only users whose `Email` field is non-empty
 // 3. Writes the filtered list to `filtered_users.json`, pretty-printed (hint: look at `json.MarshalIndent`)
 // 4. If `users.json` doesn't exist, print a clear error instead of crashing
-
 package main
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"os"
 )
@@ -25,7 +25,7 @@ func main() {
 	// 1. Read users.json
 	data, err := os.ReadFile("users.json")
 	if err != nil {
-		if os.IsNotExist(err) {
+		if errors.Is(err, os.ErrNotExist) {
 			fmt.Println("Error: users.json not found in the current directory.")
 			return
 		}
@@ -40,7 +40,9 @@ func main() {
 	}
 
 	// 2. Filter to users with non-empty Email
-	var filtered []User
+	// Initialized as []User{}, not var filtered []User — so if zero
+	// users match, this still marshals to `[]`, not `null`.
+	filtered := []User{}
 	for _, u := range users {
 		if u.Email != "" {
 			filtered = append(filtered, u)
